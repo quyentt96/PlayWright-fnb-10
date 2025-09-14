@@ -1,0 +1,30 @@
+CÁC BƯỚC ĐỂ ĐẨY CODE LÊN GITHUB:
+
+# 1. Vào thư mục project
+cd C:\Users\HP\Playwright-fnb-10
+
+# 2. Kiểm tra git status  
+git status
+
+# 3. Add và commit (nếu chưa có)
+Git init (tạo mới 1 project)
+git add .
+git commit -m "Initial Playwright project setup"
+
+# 4. Tạo repo trên GitHub
+
+# 5. Connect với GitHub
+git remote add origin https://github.com/your-username/Playwright-fnb-10.git (hoặc ssh github.com:quyentt96/Playwright-fnb-10.git)
+git branch -M main
+git push -u origin main
+
+
+
+---------------------------------------------------------------------------------------------------
+Cấu hình Git username, email
+
+# Thiết lập tên người dùng
+git config --global user.name "Your Full Name"
+
+# Thiết lập email
+git config --global user.email "your.email@example.com"
