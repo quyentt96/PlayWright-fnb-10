@@ -1,0 +1,39 @@
+I/Giải thích ý nghĩa các câu lệnh git 
+
+1. git init: Khởi tạo một repo Git mới trong thư mục hiện tại hoặc tạo 1 repo mới trên 1 thư mục mới
+2. git add <file_name>: add file cụ thể vào vùng chờ (staging area) để chuẩn bị cho việc thực hiện commit
+3. git add . : Add tất cả các file changed (files mới, files đã sửa đổi, files đã xóa) trong thư mục hiện tại và thư mục con vào vùng chò commit
+4. git commit -m "message": lưu các thay đổi từ vùng chuẩn bị commit(staging area) vào repo. -m là message commit, thường dùng để giải thích cho nhánh commit cái gì
+
+II/ Bài tập tưởng tượng
+Thứ tự tuần tự thao tác từ a-f
+
+a. Khởi tạo folder các file: file1, file2
+- Working directory: tồn tại 2 file untracked file1, file2
+- Staging area: trống
+- Repo: Chưa có repo
+
+b. Chạy lệnh - git init:
+- Working directory: tồn tại 2 file untracked file1, file2
+- Staging area: trống
+- Repo: Khởi tại repo, chưa có commit
+
+c. Chạy lệnh - git commit -m"init project" -> báo lỗi tồn tại file untracked
+- Working directory: tồn tại 2 file untracked file1, file2
+- Staging area: trống
+- Repo: chưa có commit
+
+d. Chạy lệnh - git add file1
+- Working directory: file1 được đẩy sang vùng staging area, file2 untracked
+- Staging area: tồn tại file1
+- Repo: chưa có commit
+
+e. Chạy lệnh - git commit -m"add file1"
+- Working directory: file1 được lưu trên repo, file2 untracked
+- Staging area: trống
+- Repo: Lưu file1 với msg "add file1", ghi nhận log commit
+
+f. Chạy lệnh - git add file -> báo lỗi file name không tồn tại
+- Working directory: file1 được lưu trên repo, file2 untracked
+- Staging area: trống
+- Repo: Lưu file1 với msg "add file1", ghi nhận log commit
